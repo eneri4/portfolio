@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>RISC-V Multi-Cycle Processor | Irene Hong</title>
+
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+
+<body>
+
+  <main class="page project-page">
+
+    <!-- BACK LINK -->
+
+    <a class="back" href="../categories/comp_arch.html">
+      ← COMPUTER ARCHITECTURE
+    </a>
+
+
+    <!-- TITLE -->
+
+    <header class="project-header">
+
+      <h1 class="project-title">
+        RISC-V Multi-Cycle Processor
+      </h1>
+
+    </header>
+
+
+    <!-- OVERVIEW -->
+
+    <section class="project-section">
+
+      <div class="section-label">
+        01 — OVERVIEW
+      </div>
+
+      <div class="section-content">
+
+        <p>
+          Built a 32-bit multi-cycle RISC-V processor in SystemVerilog 
+          with a datapath and FSM-based control unit following Harris &
+          Harris design; tested Icarus Verilog simulations to check all 
+          instruction types
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- LEARNING GOALS -->
+
+    <section class="project-section">
+
+      <div class="section-label">
+        02 — LEARNING GOALS
+      </div>
+
+      <div class="section-content">
+
+        <ul class="learning-goals">
+
+          <li>
+            What are the multicycle trade-offs when a shorter clock 
+            period and shared hardware at the cost of more cycles per 
+            instruction are used?
+          </li>
+
+          <li>
+            What are the RISC-V instruction formats (R,I,S,B,U,J) and how 
+            their immediates are scambled in encoding?
+          </li>
+
+          <li>
+            How can a datapath and FSM that sequences control signals
+            appropriately be designed?
+          </li>
+
+          <li>
+            How can modular RTL with ALUs, registers, muxes, and
+            immediate extenders be implemented?
+          </li>
+
+          <li>
+            How can hardware be berified by reading waveforms to trace state,
+            control signals, and data?        
+          </li>
+
+            
+        </ul>
+
+      </div>
+
+    </section>
+
+
+    <!-- MEDIA -->
+
+    <section class="project-section">
+
+      <div class="section-label">
+        03 — MEDIA
+      </div>
+
+      <div class="section-content media-section">
+
+
+        <!-- PDF REPORT -->
+
+        <div class="project-pdf">
+
+          <iframe
+            src="../media/riscv.pdf"
+            title="RISC-V Report"
+          ></iframe>
+
+          <a
+            class="pdf-link"
+            href="../media/riscv.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open PDF in new tab →
+          </a>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- REFLECTION -->
+
+    <section class="project-section">
+
+      <div class="section-label">
+        04 — REFLECTION
+      </div>
+
+      <div class="section-content">
+
+        <p>
+          The difficulty of this project came from the number of moving 
+          parts our group had to keep track of: how the control unit 
+          sequences each step, how the instruction types differ, and 
+          how everything fits together modularly so every instruction 
+          works. For much of the project I was confused. Our group 
+          spent several hours discussing the control logic, and even 
+          figuring out what questions to ask was a challenge. Hearing 
+          teammates work through it gradually gave me a picture of the 
+          overall layout: a control FSM steps shared hardware through 
+          fetch, decode, execute, memory, and writeback.
+        </p>
+
+        <p>
+          The project also built my simulation skills. Checking whether 
+          an instruction worked meant reading the instr, state, 
+          reg_write, and write_data signals together, which depends on 
+          understanding the control logic. It showed me how much of 
+          hardware design is checking timing and data against what the 
+          design should be doing, and it's an area I'd like to 
+          understand more deeply.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- FOCUS AREA -->
+
+    <section class="project-section focus-section">
+
+    <div class="section-label">
+        05 — FOCUS AREA
+    </div>
+
+    <div class="section-content">
+
+        <div class="focus-tags">
+
+        <span class="focus-tag">SystemVerilog</span>
+        <span class="focus-tag">Icarus Verilog</span>
+        <span class="focus-tag">FPGAs</span>
+
+        </div>
+
+    </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+      <span>© 2026 Irene Hong</span>
+
+      <span>
+        Electrical & Computer Engineering
+      </span>
+
+    </footer>
+
+    <a class="home-arrow" href="../index.html" aria-label="Return to home">
+      ↓
+    </a>
+    
+  </main>
+
+</body>
+
+</html>

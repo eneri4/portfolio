@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Competitive Path Planning | Irene Hong</title>
+
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+
+<body>
+
+  <main class="page project-page">
+
+    <!-- BACK LINK -->
+
+    <a class="back" href="../categories/applied_math.html">
+      ← APPLIED MATHEMATICS
+    </a>
+
+
+    <!-- TITLE -->
+
+    <header class="project-header">
+
+      <h1 class="project-title">
+        Competitive Path Planning
+      </h1>
+
+    </header>
+
+
+    <!-- OVERVIEW -->
+
+    <section class="project-section">
+
+      <div class="section-label">
+        01 — OVERVIEW
+      </div>
+
+      <div class="section-content">
+
+        <p>
+          Optimizing path planning for competitors  in custom pursuer-
+          evader game by deciding actions with a minimax algorithm 
+          that uses alpha-beta pruning in Python
+
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- LEARNING GOALS -->
+
+    <section class="project-section">
+
+      <div class="section-label">
+        02 — LEARNING GOALS
+      </div>
+
+      <div class="section-content">
+
+        <ul class="learning-goals">
+
+          <li>
+            What is minimax? What is alpha-beta pruning? What are its 
+            applications beyond game theory?
+          </li>
+
+          <li>
+            What are the ties between graph theory and computational efficiency?
+          </li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+
+    <!-- MEDIA -->
+
+    <section class="project-section">
+
+      <div class="section-label">
+        03 — MEDIA
+      </div>
+
+      <div class="section-content media-section">
+
+
+        <!-- GIF -->
+
+        <figure class="project-media">
+
+          <img
+            src="../media/game_0.gif"
+            alt="Game 0 demonstration"
+          >
+
+          <figcaption>
+            One game of pursuer-evader with pursuer winning after 7 turns.
+          </figcaption>
+
+        </figure>
+
+
+        <!-- PDF REPORT -->
+         
+        <div class="project-pdf">
+
+          <iframe
+            src="../media/competitive_path_planning_poster.pdf"
+            title="Competitive Path Planning Project Poster"
+          ></iframe>
+
+          <a
+            class="pdf-link"
+            href="../media/competitive_path_planning_poster.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open PDF in new tab →
+          </a>
+
+        </div>
+
+
+        <!-- GITHUB -->
+
+        <div class="project-links">
+
+          <a
+            class="project-link"
+            href="https://github.com/itannermahncke/competitive_path_planning.git"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            View GitHub →
+          </a>
+
+        </div>
+        
+
+      </div>
+
+    </section>
+
+
+    <!-- REFLECTION -->
+
+    <section class="project-section">
+
+      <div class="section-label">
+        04 — REFLECTION
+      </div>
+
+      <div class="section-content">
+
+        <p>
+          A major issue within this project was a gap in understanding 
+          of what alpha-beta pruning really is. We were lost in the 
+          software while implementing concepts we did not truly know. 
+          It was only the day before deliverables were due where I sat 
+          down and relearned everything from a purely mathematical 
+          standpoint that I knew how to move forward with our stump. I 
+          also had the most fun during this period, which surprised me. 
+          Instead of being frustrated by a lack of progress, I saw a 
+          potential to challenge myself and tackle the unknown. This 
+          was one of many green lights that indicated to me that 
+          research was of great interest to me.
+
+          I finally understood that AB pruning is a search algorithm. 
+          It traverses a known tree recursively to give a final 
+          compromised value between max and min possible heuristic 
+          values. It does not traverse the tree while building it. 
+          Yet, it still optimizes minimax because every single branch 
+          and node do not need to be compared. Instead, evaluation is 
+          cut off whenever alpha is greater than or equal to the beta 
+          threshold. 
+        </p>
+
+        <p>
+          Aside from making the game more complex and interesting by 
+          adding corner moves, heuristics, and concurrency, I would 
+          also implement singular extensions in the future, in which 
+          search depth is extended when a shallow search shows one 
+          move leading to a wide margin, allowing the algorithm to 
+          follow critical lines. This would reflect the program used b
+          y Deep Blue, the IBM supercomputer that beat the then-
+          reigning Chess champion Garry Kasparov in 1997.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- FOCUS AREA -->
+
+    <section class="project-section focus-section">
+
+    <div class="section-label">
+        05 — FOCUS AREA
+    </div>
+
+    <div class="section-content">
+
+        <div class="focus-tags">
+
+        <span class="focus-tag">Graph Theory</span>
+        <span class="focus-tag">MiniMax</span>
+        <span class="focus-tag">Alpha-Beta Pruning</span>
+        <span class="focus-tag">Python</span>
+
+        </div>
+
+    </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+      <span>© 2026 Irene Hong</span>
+
+      <span>
+        Electrical & Computer Engineering
+      </span>
+
+    </footer>
+
+    <a class="home-arrow" href="../index.html" aria-label="Return to home">
+      ↓
+    </a>
+    
+  </main>
+
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Robo-Behaviors | Irene Hong</title>
+
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+
+<body>
+
+  <main class="page project-page">
+
+    <!-- BACK LINK -->
+
+    <a class="back" href="../categories/robotics.html">
+      ← ROBOTICS
+    </a>
+
+
+    <!-- TITLE -->
+
+    <header class="project-header">
+
+      <h1 class="project-title">
+        Robo-Behaviors
+      </h1>
+
+    </header>
+
+
+    <!-- OVERVIEW -->
+
+    <section class="project-section">
+
+      <div class="section-label">
+        01 — OVERVIEW
+      </div>
+
+      <div class="section-content">
+
+        <p>
+            Learning ROS2 fundamentals by programming Neato to drive 
+            in a square, follow a wall, and follow a dynamic object
+
+
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- LEARNING GOALS -->
+
+    <section class="project-section">
+
+      <div class="section-label">
+        02 — LEARNING GOALS
+      </div>
+
+      <div class="section-content">
+
+        <ul class="learning-goals">
+
+          <li>
+            How can callbacks be used to subscribe/publish to certain 
+            ROS topics?
+          </li>
+
+          <li>
+            How can gazebo simulations, rviz2 visualizations, and 
+            terminal commands be useful for debugging?
+          </li>
+
+          <li>
+            How are transformations made between reference frames?
+          </li>
+
+          <li>
+            How are different algorithms (like RANSAC) used for object 
+            detection?
+          </li>
+
+          <li>
+            How can wall following and corner evasion be modeled as a 
+            second order system? 
+          </li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+
+    <!-- MEDIA -->
+
+    <section class="project-section">
+
+      <div class="section-label">
+        03 — MEDIA
+      </div>
+
+      <div class="section-content media-section">
+
+
+        <!-- GIF -->
+
+        <figure class="project-media">
+
+          <img
+            src="../media/robo_fsm.gif"
+            alt="Robo-Behaviors FSM Demo"
+          >
+
+          <figcaption>
+            Robo-Behaviors FSM Demo
+          </figcaption>
+
+        </figure>
+
+
+        <!-- GITHUB -->
+
+        <div class="project-links">
+
+          <a
+            class="project-link"
+            href="https://github.com/enzolaj/ros_behaviors_fsm"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            View GitHub →
+          </a>
+
+        </div>
+        
+
+      </div>
+
+    </section>
+
+
+    <!-- REFLECTION -->
+
+    <section class="project-section">
+
+      <div class="section-label">
+        04 — REFLECTION
+      </div>
+
+      <div class="section-content">
+
+        <p>
+          Over the course of the project, I've gained familiarity with 
+          ROS, Gazebo, rviz, and basic terminal commands. I've 
+          improved my coding abilities by understanding how to translate 
+          a vision of our system architecture into real code, while 
+          ensuring that there is room to scale up its complexity. As I 
+          optimized the wall following code, I realized just how 
+          important it is to not hard-code any parameters or functions 
+          and to leave flexibility to test for various edge cases. I 
+          also saw just how useful the simulations were, not only 
+          because it had ideal conditions but also because I could 
+          build another world to isolate controls and test different 
+          behaviors. This was an unexpected but very helpful way for me 
+          to debug my work. Additionally, as I focused on more tedious 
+          work like creating visualization, I came to appreciate the 
+          long tutorials and documentation that was provided. Initially, 
+          I used LLMs to translate the tf and Marker guides from C++ to 
+          Python as well as to create my display framework. However, as 
+          issues arose with the transforms not operating properly (and 
+          lidar scans being rotated on the odom frame) I quickly 
+          realized that AI was useful for creating a simple foundation, 
+          but that official documentation and original thought was 
+          always more effective at producing an understandable and 
+          functional final product. In the end, I am grateful for the 
+          takeaways I had from the project and am excited to use my 
+          newly advanced skills to create even more creative and 
+          interesting robotics projects in the future.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- FOCUS AREA -->
+
+    <section class="project-section focus-section">
+
+    <div class="section-label">
+        05 — FOCUS AREA
+    </div>
+
+    <div class="section-content">
+
+        <div class="focus-tags">
+
+        <span class="focus-tag">Materials Science</span>
+        <span class="focus-tag">Solid-State Chemistry</span>
+        <span class="focus-tag">Instrumentation</span>
+
+        </div>
+
+    </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+      <span>© 2026 Irene Hong</span>
+
+      <span>
+        Electrical & Computer Engineering
+      </span>
+
+    </footer>
+
+    <a class="home-arrow" href="../index.html" aria-label="Return to home">
+      ↓
+    </a>
+    
+  </main>
+
+</body>
+
+</html>

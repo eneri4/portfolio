@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Blinker  | Irene Hong</title>
+
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+
+<body>
+
+  <main class="page project-page">
+
+    <!-- BACK LINK -->
+
+    <a class="back" href="../categories/pcb.html">
+      ← PRINTED CIRCUIT BOARDS
+    </a>
+
+
+    <!-- TITLE -->
+
+    <header class="project-header">
+
+      <h1 class="project-title">
+        Blinker
+      </h1>
+
+    </header>
+
+
+    <!-- OVERVIEW -->
+
+    <section class="project-section">
+
+      <div class="section-label">
+        01 — OVERVIEW
+      </div>
+
+      <div class="section-content">
+
+        <p>
+          Simulating a hysteric oscillator that blinks red LED once per 
+          second in LTSpice, designing PCB in KiCAD, and fabricating 
+          with given components & board
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- LEARNING GOALS -->
+
+    <section class="project-section">
+
+      <div class="section-label">
+        02 — LEARNING GOALS
+      </div>
+
+      <div class="section-content">
+
+        <ul class="learning-goals">
+
+          <li>
+            How should components be arranged to minimize resistance, 
+            inductance, and noise coupling?
+          </li>
+
+          <li>
+            How should trace widths be differentiated between power 
+            and signal?
+          </li>
+
+          <li>
+            How should vias pads be placed? 
+          </li>
+
+          <li>
+            How does a hysteric oscillator work?
+          </li>
+
+          <li>
+            How should components be chosen according to worst-case analysis and per-unit sensitivities?   
+          </li>
+
+          <li>
+            How do you parse through a data sheet?     
+          </li>
+
+          <li>
+            How does reflow soldering work?
+          </li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+
+    <!-- MEDIA -->
+
+    <section class="project-section">
+
+      <div class="section-label">
+        03 — MEDIA
+      </div>
+
+      <div class="section-content media-section">
+
+
+        <!-- VIDEO -->
+
+        <figure class="project-media">
+
+          <iframe
+            src="https://www.youtube.com/embed/YHy3soPtJoc"
+            title="Blinker demo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+
+          <figcaption>
+            Blinker demo
+          </figcaption>
+
+        </figure>
+
+
+        <!-- PDF REPORT -->
+
+        <div class="project-pdf">
+
+          <iframe
+            src="../media/blinker_report.pdf"
+            title="Blinker Report"
+          ></iframe>
+
+          <a
+            class="pdf-link"
+            href="../media/blinker_report.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open PDF in new tab →
+          </a>
+
+        </div>
+        
+
+      </div>
+
+    </section>
+
+
+    <!-- REFLECTION -->
+
+    <section class="project-section">
+
+      <div class="section-label">
+        04 — REFLECTION
+      </div>
+
+      <div class="section-content">
+
+        <p>
+          A big reminder this project instilled in me was how important 
+          it is to read documentation. Parsing through datasheets 
+          taught me that physical distance between components affect 
+          how circuits perform, which was something I never encountered 
+          in my Microelectronic Circuits course, where everything lived 
+          in simulation. Datasheets showed me the path between a 
+          schematic and a real board, where a bypass capacitor had to 
+          sit closely to the op amp's supply pin to provide current 
+          during fast switching and the regulator needed bulk capacitors 
+          at its input and output to maintain stability.         
+        </p>
+
+        <p>
+          My favorite part of it all was assembling the board with 
+          reflow soldering. I learned that boards must follow a 
+          temperature profile--heated gradually so components don't 
+          crack, help long enough for everything to reach the same 
+          temperature, then raised above the solder's melting point so 
+          the flux can clean the surfaces and the solder can bond to 
+          each pad. I was fascinated by how a simple manufacturing step 
+          is controlled by chemistry and heat transfer as much as the 
+          circuit design, heightening my interest in process engineering 
+          where chemistry and electrical engineering collide. 
+        </p>
+
+        <p>
+          I also had the opportunity to review per-unit sensitivity and 
+          worst-case analysis by applying these concepts to my own 
+          oscillator and seeing how tolerances of R, C, and feedback 
+          resistors combined to shift the blink period. This helped 
+          reinforce my previous learning. 
+        </p>
+
+        <p>
+          I am definitely not 100% confident in my PCB layout skills as 
+          this was my first exposure to anything fabrication-related. 
+          To improve my design, I would decrease the overall area of 
+          the board even further and route my traces more neatly.
+        </p>
+
+         <p>
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- FOCUS AREA -->
+
+    <section class="project-section focus-section">
+
+    <div class="section-label">
+        05 — FOCUS AREA
+    </div>
+
+    <div class="section-content">
+
+        <div class="focus-tags">
+
+        <span class="focus-tag">KiCAD</span>
+        <span class="focus-tag">LTSpice</span>
+
+        </div>
+
+    </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+      <span>© 2026 Irene Hong</span>
+
+      <span>
+        Electrical & Computer Engineering
+      </span>
+
+    </footer>
+
+    <a class="home-arrow" href="../index.html" aria-label="Return to home">
+      ↓
+    </a>
+    
+  </main>
+
+</body>
+
+</html>

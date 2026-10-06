@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title> Game of Life  | Irene Hong</title>
+
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+
+<body>
+
+  <main class="page project-page">
+
+    <!-- BACK LINK -->
+
+    <a class="back" href="../categories/comp_arch.html">
+      ← COMPUTER ARCHITECTURE
+    </a>
+
+
+    <!-- TITLE -->
+
+    <header class="project-header">
+
+      <h1 class="project-title">
+        Game of Life
+      </h1>
+
+    </header>
+
+
+    <!-- OVERVIEW -->
+
+    <section class="project-section">
+
+      <div class="section-label">
+        01 — OVERVIEW
+      </div>
+
+      <div class="section-content">
+
+        <p>
+          3 instances (RGB) of Conway’s game of life playing infinitely 
+          on an 8x8 WS2812B RGB LED grid with cyclic boundary 
+          conditions
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- LEARNING GOALS -->
+
+    <section class="project-section">
+
+      <div class="section-label">
+        02 — LEARNING GOALS
+      </div>
+
+      <div class="section-content">
+
+        <ul class="learning-goals">
+
+          <li>
+            What is Conway's Game of Life?
+          </li>
+
+          <li>
+            How can the rules of Game of Life be adapted to work with an FPGA?
+          </li>
+
+          <li>
+            How does timing work in SystemVerilog?
+          </li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+
+    <!-- MEDIA -->
+
+    <section class="project-section">
+
+      <div class="section-label">
+        03 — MEDIA
+      </div>
+
+      <div class="section-content media-section">
+
+
+        <!-- VIDEO -->
+
+        <figure class="project-media">
+
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/iYIejEyvorM"
+            title="Game of Life demo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+
+          <figcaption>
+            Game of Life demo
+          </figcaption>
+
+        </figure>
+
+
+        <!-- PDF REPORT -->
+
+        <div class="project-pdf">
+
+          <iframe
+            src="../media/game_of_life_report.pdf"
+            title="Game of Life Report"
+          ></iframe>
+
+          <a
+            class="pdf-link"
+            href="../media/game_of_life_report.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open PDF in new tab →
+          </a>
+
+        </div>
+
+
+        <!-- GITHUB -->
+
+        <div class="project-links">
+
+          <a
+            class="project-link"
+            href="https://github.com/eneri4/iceBlinkPico/tree/main/examples/game_of_life"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            View GitHub →
+          </a>
+
+        </div>
+        
+
+      </div>
+
+    </section>
+
+
+    <!-- REFLECTION -->
+
+    <section class="project-section">
+
+      <div class="section-label">
+        04 — REFLECTION
+      </div>
+
+      <div class="section-content">
+
+        <p>
+          This project was challenging partly because there is so little 
+          documentation for SystemVerilog. I knew exactly how I would 
+          implement Game of Life in Python, but translating that into 
+          hardware was a different problem. In Python, each line runs 
+          after the one before it, but in hardware everything exists at 
+          the same time, so I had to rethink how to visit each pixel and 
+          when each value gets updated.
+        </p>
+
+        <p>
+          The most valuable learning came from understanding the 
+          difference between always_comb, which describes logic that 
+          responds immediately to its inputs, and always_ff, which 
+          stores values that only change on a clock edge, along with 
+          the difference between negedge and posedge clocks. In my 
+          design, the neighbor-counting logic runs on the falling edge 
+          and the memory updates on the rising edge, which gives each 
+          result half a cycle to settle and prevents race conditions. 
+          These were small details, but getting them wrong meant the 
+          design simply didn't work. It showed me that intuition isn't 
+          always enough, and that "boring" work like reading a 
+          textbook to understand a language really does matter.
+        </p>
+
+        <p>
+          To improve the project, I would add complexity to the rules 
+          to create a new variation of Game of Life, such as predator/
+          prey relationships between the RGB channels, or having cells 
+          fade gradually to black when they die instead of disappearing 
+          abruptly.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- FOCUS AREA -->
+
+    <section class="project-section focus-section">
+
+    <div class="section-label">
+        05 — FOCUS AREA
+    </div>
+
+    <div class="section-content">
+
+        <div class="focus-tags">
+
+        <span class="focus-tag">SystemVerilog</span>
+        <span class="focus-tag">IcarusVerilog</span>
+        <span class="focus-tag">FPGAs</span>
+
+        </div>
+
+    </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+      <span>© 2026 Irene Hong</span>
+
+      <span>
+        Electrical & Computer Engineering
+      </span>
+
+    </footer>
+
+    <a class="home-arrow" href="../index.html" aria-label="Return to home">
+      ↓
+    </a>
+    
+  </main>
+
+</body>
+
+</html>
