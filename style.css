@@ -282,6 +282,7 @@ footer {
   object-fit: contain;
   padding: 0%;    
   box-sizing: border-box;
+  filter: brightness(0) invert(1);
   opacity: .82;
   transition: transform .6s, filter .6s, opacity .6s;
 }
